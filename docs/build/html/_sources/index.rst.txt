@@ -11,7 +11,7 @@ This tutorial will walk you through the steps necessary to setup your own blockl
 * Maze type tasks. (TODO add hyperlinks) TODO add image of example
 * Blocks type tasks. 
 
-We recommend that you start with the Maze type task, as it is easier to modify to your needs.
+We recommend that you start with the Maze type task, as it is easier to modify to your needs. 
 
 In this tutorial you'll learn about :
 
@@ -24,11 +24,18 @@ For the french version please click here : TODO add link
 
 .. toctree::
    :maxdepth: 2
+   :caption: Maze type task
 
    blockly-maze
    blockly-task-creation
    map-settings
    modify_blocks
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: Block type task
+
+   block_intro
    
 Indices and tables
 ==================
