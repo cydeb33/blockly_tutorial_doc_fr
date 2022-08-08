@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Map settings &mdash; blockly_tutorial  documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>Maze tutorial - Map settings &mdash; blockly_tutorial  documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
@@ -16,7 +16,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Task creation" href="blockly-task-creation.html" /> 
+    <link rel="next" title="Maze tutorial - Modifying the toolbox &amp; workspace" href="modify_blocks.html" />
+    <link rel="prev" title="How to create a task on INGInious step by step" href="blockly-task-creation.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -34,15 +35,15 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="blockly-maze.html">Blockly - Maze - INGInious</a></li>
-<li class="toctree-l1"><a class="reference internal" href="blockly-task-creation.html">Task creation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Map settings</a><ul>
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="blockly-maze.html">Maze tutorial - first steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="blockly-task-creation.html">How to create a task on INGInious step by step</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Maze tutorial - Map settings</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#change-the-map">Change the map</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#multiple-maps">Multiple maps</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="modify_blocks.html">Maze tutorial - Modifying the toolbox &amp; workspace</a></li>
 </ul>
 
         </div>
@@ -59,7 +60,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Map settings</li>
+      <li>Maze tutorial - Map settings</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/map-settings.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -69,8 +70,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="map-settings">
-<h1>Map settings<a class="headerlink" href="#map-settings" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="maze-tutorial-map-settings">
+<h1>Maze tutorial - Map settings<a class="headerlink" href="#maze-tutorial-map-settings" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="change-the-map">
 <h2>Change the map<a class="headerlink" href="#change-the-map" title="Permalink to this headline">¶</a></h2>
 <p>You can define your own map for every exercise, to do so you only need to modify the content of the maze.config.json which is in “YourTask/public/maze.config.json”.</p>
@@ -82,7 +83,7 @@
 <div class="text-center docutils container">
 <img alt="_images/maze_config_example.JPG" src="_images/maze_config_example.JPG" />
 </div>
-<p>If you wish to modify the map layout, like creating new paths, adding obstacles and so on, you must change the element <strong>“layout” (number 1 on the image)</strong>. <strong>“layout”</strong> is an array of arrays. Each array will represent a map that the student has to solve in this exercice. The meaning of the numbers found in the array can be found in the element <strong>“squareType” (number 3 on the image)</strong> that you should not have to modify except if you are adding new types of elements to the maze. We will go over them in more details here :</p>
+<p>If you wish to modify the map layout, like creating new paths, adding obstacles and so on, you must change the element <strong>“layout”</strong>. <strong>“layout”</strong> is an array of arrays. Each array will represent a map that the student has to solve in this exercice. The meaning of the numbers found in the array can be found in the element <strong>“squareType”</strong> (that you should not have to modify except if you are adding new types of elements to the maze. We will go over them in more details here :</p>
 <ul class="simple">
 <li><strong>0</strong> is an empty tile (that might be populated randomly with non-interactive decor) where the character can’t go.</li>
 <li><strong>1</strong> is an open tile where the character can walk.</li>
@@ -91,8 +92,8 @@
 <li><strong>4</strong> is a tile with an obstacle that will kill the character if it walks on it.</li>
 <li><strong>5</strong> is a special value used if you want to make the start and goal tile the same one.</li>
 </ul>
-<p>If you wish to augment or diminish the character’s animation speed, update the <strong>“animationSpeed”</strong> element <strong>(number 2 on the image)</strong>.</p>
-<p>If you wish to change the character orientation at the beginning of the task, update the <strong>“startDirection”</strong> element <strong>(number 4 on the image)</strong>. The character is currently facing SOUTH, you can put WEST, NORTH or EAST.</p>
+<p>If you wish to augment or diminish the character’s animation speed, update the <strong>“animationSpeed”</strong> element.</p>
+<p>If you wish to change the character orientation at the beginning of the task, update the <strong>“startDirection”</strong> element. The character is currently facing SOUTH, you can put WEST, NORTH or EAST.</p>
 </div>
 <div class="section" id="multiple-maps">
 <h2>Multiple maps<a class="headerlink" href="#multiple-maps" title="Permalink to this headline">¶</a></h2>
@@ -113,7 +114,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="blockly-task-creation.html" class="btn btn-neutral float-left" title="Task creation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="blockly-task-creation.html" class="btn btn-neutral float-left" title="How to create a task on INGInious step by step" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="modify_blocks.html" class="btn btn-neutral float-right" title="Maze tutorial - Modifying the toolbox &amp; workspace" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

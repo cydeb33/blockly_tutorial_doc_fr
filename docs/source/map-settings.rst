@@ -1,5 +1,5 @@
-Map settings 
-============
+Maze tutorial - Map settings 
+============================
 
 Change the map
 --------------
@@ -18,7 +18,7 @@ This maze.config.json gives the map shown below :
 
     .. image:: ../images/img_en/maze/maze_config_example.JPG
 
-If you wish to modify the map layout, like creating new paths, adding obstacles and so on, you must change the element **"layout"**. **"layout"** is an array of arrays. Each array will represent a map that the student has to solve in this exercice. The meaning of the numbers found in the array can be found in the element **"squareType" (that you should not have to modify except if you are adding new types of elements to the maze. We will go over them in more details here :
+If you wish to modify the map layout, like creating new paths, adding obstacles and so on, you must change the element **"layout"**. **"layout"** is an array of arrays. Each array will represent a map that the student has to solve in this exercice. The meaning of the numbers found in the array can be found in the element **"squareType"** (that you should not have to modify except if you are adding new types of elements to the maze. We will go over them in more details here :
 
 
 

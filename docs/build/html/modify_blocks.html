@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maze tutorial - How to modify the blocks with the toolbox &amp; workspace &mdash; blockly_tutorial  documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Maze tutorial - Map settings" href="map-settings.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> blockly_tutorial
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="blockly-maze.html">Maze tutorial - first steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="blockly-task-creation.html">How to create a task on INGInious step by step</a></li>
+<li class="toctree-l1"><a class="reference internal" href="map-settings.html">Maze tutorial - Map settings</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Maze tutorial - How to modify the blocks with the toolbox &amp; workspace</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#xml-interface">XML interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#graphical-interface">Graphical interface</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">blockly_tutorial</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Maze tutorial - How to modify the blocks with the toolbox &amp; workspace</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/modify_blocks.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="maze-tutorial-how-to-modify-the-blocks-with-the-toolbox-workspace">
+<h1>Maze tutorial - How to modify the blocks with the toolbox &amp; workspace<a class="headerlink" href="#maze-tutorial-how-to-modify-the-blocks-with-the-toolbox-workspace" title="Permalink to this headline">¶</a></h1>
+<p>If you wish to add or remove blocks from your task, you can do so using either the <strong>graphical user interface</strong> or the <strong>XML files</strong>. The blocks that are specific to a maze can be found under the Block Library category, and are defined in the file <strong>“blocks.js”</strong> (under YourTask/public/), which should not be modified, except if you want to add new custom blocks to it.</p>
+<p>To create a new custom block please refer to this tutorial : <a class="reference external" href="https://jobblockly.readthedocs.io/en/latest/BaseBlockly.html#example-create-a-custom-block-if-else">https://jobblockly.readthedocs.io/en/latest/BaseBlockly.html#example-create-a-custom-block-if-else</a></p>
+<div class="section" id="xml-interface">
+<h2>XML interface<a class="headerlink" href="#xml-interface" title="Permalink to this headline">¶</a></h2>
+<p><strong>This is the XML interface where you can modify the blocks present in your task (notice that there are two separate files. One for the toolbox and one for the workspace):</strong></p>
+<div class="text-center docutils container">
+<img alt="_images/XML_edit.JPG" src="_images/XML_edit.JPG" />
+</div>
+</div>
+<div class="section" id="graphical-interface">
+<h2>Graphical interface<a class="headerlink" href="#graphical-interface" title="Permalink to this headline">¶</a></h2>
+<p><strong>This is the graphical user interface where you can modify the blocks present in your task (The corresponding XML files are automatically updated when you modify the graphical interface) :</strong></p>
+<div class="text-center docutils container">
+<img alt="_images/blockly_factory_graphically.JPG" src="_images/blockly_factory_graphically.JPG" />
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="map-settings.html" class="btn btn-neutral float-left" title="Maze tutorial - Map settings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, celine deknop - cyrille debongnie.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

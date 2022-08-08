@@ -1,8 +1,7 @@
-Task creation
-=============
+How to create a task on INGInious step by step
+==============================================
 
 This part of the tutorial will explain step by step how to create a task on INGInious.
-
 
 1) You need to have an INGInious account, to do so, click on **Register**, you will be directed to this page, fill out the form and click on **Sign up** :
 

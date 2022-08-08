@@ -1,5 +1,5 @@
-Map settings 
-============
+Maze tutorial - Map settings 
+============================
 
 Change the map
 --------------
@@ -18,7 +18,7 @@ This maze.config.json gives the map shown below :
 
     .. image:: ../images/img_en/maze/maze_config_example.JPG
 
-If you wish to modify the map layout, like creating new paths, adding obstacles and so on, you must change the element **"layout" (number 1 on the image)**. **"layout"** is an array of arrays. Each array will represent a map that the student has to solve in this exercice. The meaning of the numbers found in the array can be found in the element **"squareType" (number 3 on the image)** that you should not have to modify except if you are adding new types of elements to the maze. We will go over them in more details here :
+If you wish to modify the map layout, like creating new paths, adding obstacles and so on, you must change the element **"layout"**. **"layout"** is an array of arrays. Each array will represent a map that the student has to solve in this exercice. The meaning of the numbers found in the array can be found in the element **"squareType"** (that you should not have to modify except if you are adding new types of elements to the maze. We will go over them in more details here :
 
 
 
@@ -34,9 +34,9 @@ If you wish to modify the map layout, like creating new paths, adding obstacles 
 
 * **5** is a special value used if you want to make the start and goal tile the same one.
 
-If you wish to augment or diminish the character's animation speed, update the **"animationSpeed"** element **(number 2 on the image)**.
+If you wish to augment or diminish the character's animation speed, update the **"animationSpeed"** element.
 
-If you wish to change the character orientation at the beginning of the task, update the **"startDirection"** element **(number 4 on the image)**. The character is currently facing SOUTH, you can put WEST, NORTH or EAST.
+If you wish to change the character orientation at the beginning of the task, update the **"startDirection"** element. The character is currently facing SOUTH, you can put WEST, NORTH or EAST.
 
 Multiple maps
 -------------

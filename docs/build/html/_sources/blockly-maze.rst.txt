@@ -1,9 +1,9 @@
-Blockly - Maze - INGInious
-=====================================================
+Maze tutorial - first steps
+===========================
 
 
 Getting started - Creating your course
------------------------------------------------------
+--------------------------------------
 
 Welcome to the Blockly maze task tutorial.
 
@@ -12,7 +12,7 @@ This tutorial will walk you through the informations necessary to create blockly
 In order to have build your course and all the tasks within, you must first create your own course, to do so please contact : contact@inginious.org
 
 Student interface on INGInious
------------------------------------------------------
+------------------------------
 
 Let's begin this tutorial by going over what your students are going to be using.
 
