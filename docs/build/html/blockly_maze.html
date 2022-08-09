@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maze tutorial - first steps &mdash; blockly_tutorial  documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> blockly_tutorial
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Maze type task</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="maze_intro.html">Maze tutorial - First steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maze_map_settings.html">Maze tutorial - Map settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maze_modify_blocks.html">Maze tutorial - How to modify the blocks with the toolbox &amp; workspace</a></li>
+</ul>
+<p class="caption"><span class="caption-text">General informations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="blockly_task_creation.html">How to create a task on INGInious step by step</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Block type task</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="block_intro.html">Block tutorial - First steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="block_modify_block.html">Block tutorial - How to modify the blocks with the toolbox &amp; workspace</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">blockly_tutorial</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Maze tutorial - first steps</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/blockly_maze.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="maze-tutorial-first-steps">
+<h1>Maze tutorial - first steps<a class="headerlink" href="#maze-tutorial-first-steps" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getting-started-creating-your-course">
+<h2>Getting started - Creating your course<a class="headerlink" href="#getting-started-creating-your-course" title="Permalink to this headline">¶</a></h2>
+<p>Welcome to the Blockly maze task tutorial.</p>
+<p>This tutorial will walk you through the informations necessary to create blockly maze tasks.</p>
+<p>In order to build your course and all the tasks within, you must first create your own course, to do so please contact : <a class="reference external" href="mailto:contact&#37;&#52;&#48;inginious&#46;org">contact<span>&#64;</span>inginious<span>&#46;</span>org</a></p>
+</div>
+<div class="section" id="student-interface-on-inginious">
+<h2>Student interface on INGInious<a class="headerlink" href="#student-interface-on-inginious" title="Permalink to this headline">¶</a></h2>
+<p>Let’s begin this tutorial by going over what your students are going to be using.</p>
+<p>All the blockly tasks that require a visual map are set like in the image below, that represents a basic Maze task.</p>
+<ul class="simple">
+<li>On top of the image you can see the title and the context of the task.</li>
+<li><strong>MAP</strong> : The visual blockly tasks require a <strong>map</strong>, the goal of the student is to make the character go from a point A to a point B, following a certain path while avoiding the obstacles.</li>
+<li><strong>TOOLBOX</strong> : To complete the task, the student is given a set of blocks, present in the <strong>toolbox</strong>, the student can drag and drop blocks from the <strong>toolbox</strong> to the <strong>workspace</strong>. When setting up the task as the teacher, you decide what blocs are available in the <strong>toolbox</strong>.</li>
+<li><strong>WORKSPACE</strong> : The <strong>workspace</strong> is where the blocks are set to solve the task. When setting up the task as the teacher, you decide what blocs are available in the <strong>workspace</strong>.</li>
+<li><ol class="first arabic">
+<li>The <strong>Run code</strong> button allows the student to execute the blocks present in the <strong>workspace</strong>. The character will move accordingly to the blocks. To execute the code multiple times, the student needs to press it again when it says <strong>“Restart”</strong> and then <strong>“Run code”</strong> again (Like in the bottom image).</li>
+</ol>
+</li>
+<li><ol class="first arabic" start="2">
+<li>The three buttons <strong>“Blocks / Split / Text”</strong> allow the student to show/hide an interface, showing the equivalent Python code of the blocks currently present in the workspace. The <strong>“Split”</strong> button shows the interface on the right. By default it is set to <strong>“Blocks”</strong>, which only shows the blocks. The interface showing the code is not editable.</li>
+</ol>
+</li>
+<li><ol class="first arabic" start="3">
+<li>The interface showing the Python code equivalent of the blocks in the workspace.</li>
+</ol>
+</li>
+<li><ol class="first arabic" start="4">
+<li>In order to test his solution, the student needs to press <strong>Submit</strong>. Pressing <strong>Run code</strong> only shows on the map the effect of the blocks. The <strong>Submit</strong> button will trigger the grading scripts, showing the feedback you decided to set based on the answer of the student (the grading system is covered in more detail later in this tutorial).</li>
+</ol>
+</li>
+<li><ol class="first arabic" start="5">
+<li>The submission history on the bottom left allows the student to retrieve his previous attempts and re-run them.</li>
+</ol>
+</li>
+<li><ol class="first arabic" start="6">
+<li>This shows a few information about the task and the student’s progress.</li>
+</ol>
+</li>
+</ul>
+<div class="text-center docutils container">
+<img alt="_images/inginious_interface_user.JPG" src="_images/inginious_interface_user.JPG" />
+</div>
+</div>
+<div class="section" id="submitting-and-grading">
+<h2>Submitting and grading<a class="headerlink" href="#submitting-and-grading" title="Permalink to this headline">¶</a></h2>
+<p>As briefly explained before, pressing <strong>“Run code”</strong> only executes the code so that the student can see what the character does accordingly on the map.</p>
+<p>To grade the code written by the student, the student needs to press <strong>“submit”</strong> at the very bottom of the task. His code is then sent to a script testing the code, here a Python file called <strong>“maze.tpl.py”</strong> that sends a message to a <strong>“run”</strong> file, then the <strong>“run”</strong> file will send a message to the student. Those files should already be fully functional in the basic tasks you downloaded and you should not have to modify them.</p>
+<p>When a student submit his code, the correction will test each map individually (in order). If they all pass, the student succeeded and he will receive a positive feedback. In our example, it will look like this ( you can have many maps to test the student’s solution, more informations here (TODO add hyperlink to the part of multimaps):</p>
+<div class="text-center docutils container">
+<img alt="_images/solved.JPG" src="_images/solved.JPG" />
+</div>
+<p>If some instance failed, a negative feedback is given and the failed instance is displayed :</p>
+<div class="text-center docutils container">
+<img alt="_images/failed.JPG" src="_images/failed.JPG" />
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, celine deknop - cyrille debongnie.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

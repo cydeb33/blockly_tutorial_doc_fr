@@ -26,16 +26,28 @@ For the french version please click here : TODO add link
    :maxdepth: 2
    :caption: Maze type task
 
-   blockly-maze
-   blockly-task-creation
-   map-settings
-   modify_blocks
-   
+   maze_intro
+   maze_map_settings
+   maze_modify_blocks
+
+.. toctree::
+   :maxdepth: 2
+   :caption: General informations
+
+   blockly_task_creation
+
 .. toctree::
    :maxdepth: 2
    :caption: Block type task
 
    block_intro
+   block_modify_block
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: Advanced block type
+
+   block_advanced
    
 Indices and tables
 ==================

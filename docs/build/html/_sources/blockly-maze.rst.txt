@@ -9,7 +9,7 @@ Welcome to the Blockly maze task tutorial.
 
 This tutorial will walk you through the informations necessary to create blockly maze tasks.
 
-In order to have build your course and all the tasks within, you must first create your own course, to do so please contact : contact@inginious.org
+In order to build your course and all the tasks within, you must first create your own course, to do so please contact : contact@inginious.org
 
 Student interface on INGInious
 ------------------------------
