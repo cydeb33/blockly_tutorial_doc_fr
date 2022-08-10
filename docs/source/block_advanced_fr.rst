@@ -175,7 +175,7 @@ Pour une tâche aussi simple, le fichier de base ``run`` est suffisant, avec seu
 
 Ces deux fichiers doivent être placés dans le dossier de votre tâche, et la création de la tâche est terminée !
 
-Personnalisez votre tâche : créez la fonction somme à la main (en utilisant xml)
+Personnalisez votre tâche : créez la fonction "sum" à la main (en utilisant xml)
 --------------------------------------------------------------------------------
 
 La boîte à outils et l'espace de travail peuvent également être créés à la main (en utilisant du code xml) en cliquant sur les boutons "Edit toolbox XML" et "Edit workspace XML". Nous allons voir comment configurer ces deux éléments pour obtenir la même configuration que dans l'exemple précédent.
