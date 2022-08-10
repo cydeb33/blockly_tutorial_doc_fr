@@ -1,0 +1,115 @@
+accessible: true
+author: Robin Descamps
+categories: []
+contact_url: ''
+context: |+
+    Résoudre une équation du premier degré de type ax + b = 0
+
+    ---------------------------------------------------------
+
+    Resolve a first degree equation of the type " ax + b = 0 "
+
+
+environment_id: default
+environment_parameters:
+    limits:
+        time: '10'
+        hard_time: ''
+        memory: '100'
+    run_cmd: ''
+environment_type: docker
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: Blocks tutorial task
+network_grading: false
+problems:
+    equations-premier-degre:
+        type: blockly
+        name: Résolution d'équations du premier degré
+        header: |-
+            La fonction ``resoudre_equation_premier_degre`` doit pouvoir résoudre toute équation de type **ax + b = 0** (*a, b* ∈ ℝ). Les paramètres ``a`` et ``b`` de la fonction correspondent aux coefficents de l'équation.
+
+            - Pensez à gérer **TOUS** les cas : *a* et *b* peuvent prendre n'importe quelle valeur réelle.
+            - ``solution`` contiendra la solution de l'équation.
+            - Tous les blocs doivent normalement être utilisés.
+        options:
+            maxBlocks: Infinity
+            speed: '60'
+            trashcan: true
+            toolboxPosition: start
+            media: /plugins/blockly/static/blockly/media/
+            css: true
+            zoom:
+                controls: true
+                startScale: 1.0
+                maxScale: 3.0
+                minScale: 0.3
+                scaleSpeed: 1.2
+                wheel: false
+            oneBasedIndex: true
+            scrollbars: true
+            sounds: true
+        blocks_files:
+        - blocks.js
+        toolbox: |-
+            <xml xmlns="http://www.w3.org/1999/xhtml">
+              <block type="controls_if">
+                <mutation else="1"></mutation>
+              </block>
+              <block type="logic_compare">
+                <field name="OP">EQ</field>
+              </block>
+              <block type="variables_set">
+                <field name="VAR">solution</field>
+              </block>
+              <block type="math_single">
+                <field name="OP">NEG</field>
+                <value name="NUM">
+                  <shadow type="math_number">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+              </block>
+              <block type="ensemble_vide"></block>
+              <block type="math_arithmetic">
+                <field name="OP">ADD</field>
+                <value name="A">
+                  <shadow type="math_number">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+                <value name="B">
+                  <shadow type="math_number">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+              </block>
+              <block type="variables_get">
+                <field name="VAR">a</field>
+              </block>
+              <block type="variables_get">
+                <field name="VAR">b</field>
+              </block>
+              <block type="math_number">
+                <field name="NUM">0</field>
+              </block>
+              <block type="reels"></block>
+            </xml>
+        workspace: |-
+            <xml xmlns="http://www.w3.org/1999/xhtml">
+              <block type="procedures_defnoreturn" deletable="false" editable="false">
+                <mutation>
+                  <arg name="a"></arg>
+                  <arg name="b"></arg>
+                </mutation>
+                <field name="NAME">resoudre_equation_premier_degre</field>
+                <comment pinned="false" h="80" w="160">Décrire cette fonction…</comment>
+              </block>
+            </xml>
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
