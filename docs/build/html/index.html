@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to the tutorial for Blockly on INGInious ! &mdash; blockly_tutorial  documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>Bienvenue dans ce tutoriel pour Blockly sur INGInious ! &mdash; blockly_tutorial  documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
@@ -16,7 +16,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Maze tutorial - First steps" href="maze_intro.html" /> 
+    <link rel="next" title="Tutoriel exercices labyrinthe - Premiers pas" href="maze_intro_fr.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -34,24 +34,24 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Maze type task</span></p>
+              <p class="caption"><span class="caption-text">Labyrinthe</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="maze_intro.html">Maze tutorial - First steps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="maze_map_settings.html">Maze tutorial - Map settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="maze_modify_blocks.html">Maze tutorial - How to modify the blocks with the toolbox &amp; workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maze_intro_fr.html">Tutoriel exercices labyrinthe - Premiers pas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maze_map_settings_fr.html">Tutoriel exercices labyrinthes - Paramètres de la carte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maze_modify_blocks_fr.html">Tutoriel exercices labyrinthe - Comment modifier les blocs avec la boîte à outils et l’espace de travail</a></li>
 </ul>
-<p class="caption"><span class="caption-text">General informations</span></p>
+<p class="caption"><span class="caption-text">Informations génériques</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="blockly_task_creation.html">How to create a task on INGInious step by step</a></li>
+<li class="toctree-l1"><a class="reference internal" href="blockly_task_creation_fr.html">Comment créer une tâche sur INGInious étape par étape</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Block type task</span></p>
+<p class="caption"><span class="caption-text">Blocs</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="block_intro.html">Block tutorial - First steps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block_modify_block.html">Block tutorial - How to modify the blocks with the toolbox &amp; workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="block_intro_fr.html">Tutoriel sur les blocs - Premiers pas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="block_modify_block_fr.html">Tutoriel sur les blocs - Comment modifier les blocs avec la boîte à outils et l’espace de travail</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Advanced block type</span></p>
+<p class="caption"><span class="caption-text">Blocs avancé</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="block_advanced.html">Advanced - Block</a></li>
+<li class="toctree-l1"><a class="reference internal" href="block_advanced_fr.html">Tutoriel Avancé - Bloc</a></li>
 </ul>
 
         </div>
@@ -68,7 +68,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="#" class="icon icon-home"></a> &raquo;</li>
-      <li>Welcome to the tutorial for Blockly on INGInious !</li>
+      <li>Bienvenue dans ce tutoriel pour Blockly sur INGInious !</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -78,70 +78,91 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="welcome-to-the-tutorial-for-blockly-on-inginious">
-<h1>Welcome to the tutorial for Blockly on INGInious !<a class="headerlink" href="#welcome-to-the-tutorial-for-blockly-on-inginious" title="Permalink to this headline">¶</a></h1>
-<p>This tutorial will walk you through the steps necessary to setup your own blockly course. It is split in two parts :</p>
+  <div class="section" id="bienvenue-dans-ce-tutoriel-pour-blockly-sur-inginious">
+<h1>Bienvenue dans ce tutoriel pour Blockly sur INGInious !<a class="headerlink" href="#bienvenue-dans-ce-tutoriel-pour-blockly-sur-inginious" title="Permalink to this headline">¶</a></h1>
+<p>Ce tutoriel vous guidera à travers les étapes nécessaires à la mise en place de votre propre cours Blockly. Il est divisé en deux parties :</p>
 <ul class="simple">
-<li>Maze type tasks. (TODO add hyperlinks) TODO add image of example</li>
-<li>Blocks type tasks.</li>
+<li><strong>Les tâches de type labyrinthe (maze) :</strong></li>
 </ul>
-<p>We recommend that you start with the Maze type task, as it is easier to modify to your needs.</p>
-<p>In this tutorial you’ll learn about :</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="text-center docutils container">
+<img alt="_images/maze_example.png" src="_images/maze_example.png" />
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <ul class="simple">
-<li>The INGInious interface - What you and your students will need to know to navigate INGInious.</li>
-<li>How to create and edit tasks.</li>
-<li>How to customize your own course.</li>
+<li><strong>Tâches de type Blocs :</strong></li>
 </ul>
-<p>This tutorial is available both in french and in english.
-For the french version please click here : TODO add link</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="text-center docutils container">
+<img alt="_images/block_example.png" src="_images/block_example.png" />
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p>Nous vous recommandons de commencer par la tâche de type labyrinthe, car elle est plus facile à modifier selon vos besoins.</p>
+<p>Dans ce tutoriel, vous apprendrez à connaître :</p>
+<ul class="simple">
+<li><strong>L’interface d’INGInious - Ce que vous et vos élèves devrez savoir pour naviguer dans INGInious.</strong></li>
+<li><strong>Comment créer et modifier des tâches.</strong></li>
+<li><strong>Comment personnaliser votre propre cours.</strong></li>
+</ul>
+<p>Ce tutoriel est disponible en français et en anglais.
+Pour la version anglaise, veuillez cliquer ici : TODO add link</p>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Maze type task</span></p>
+<p class="caption"><span class="caption-text">Labyrinthe</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="maze_intro.html">Maze tutorial - First steps</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="maze_intro.html#getting-started-creating-your-course">Getting started - Creating your course</a></li>
-<li class="toctree-l2"><a class="reference internal" href="maze_intro.html#student-interface-on-inginious">Student interface on INGInious</a></li>
-<li class="toctree-l2"><a class="reference internal" href="maze_intro.html#submitting-and-grading">Submitting and grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maze_intro_fr.html">Tutoriel exercices labyrinthe - Premiers pas</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="maze_intro_fr.html#demarrage-creation-de-votre-cours">Démarrage - Création de votre cours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maze_intro_fr.html#interface-etudiant-sur-inginious">Interface étudiant sur INGInious</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maze_intro_fr.html#soumettre-et-correction">Soumettre et correction</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="maze_map_settings.html">Maze tutorial - Map settings</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="maze_map_settings.html#change-the-map">Change the map</a></li>
-<li class="toctree-l2"><a class="reference internal" href="maze_map_settings.html#multiple-maps">Multiple maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maze_map_settings_fr.html">Tutoriel exercices labyrinthes - Paramètres de la carte</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="maze_map_settings_fr.html#modifier-la-carte">Modifier la carte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maze_map_settings_fr.html#cartes-multiples">Cartes multiples</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="maze_modify_blocks.html">Maze tutorial - How to modify the blocks with the toolbox &amp; workspace</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="maze_modify_blocks.html#xml-interface">XML interface</a></li>
-<li class="toctree-l2"><a class="reference internal" href="maze_modify_blocks.html#graphical-interface">Graphical interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maze_modify_blocks_fr.html">Tutoriel exercices labyrinthe - Comment modifier les blocs avec la boîte à outils et l’espace de travail</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="maze_modify_blocks_fr.html#interface-xml">Interface XML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maze_modify_blocks_fr.html#interface-graphique">Interface graphique</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">General informations</span></p>
+<p class="caption"><span class="caption-text">Informations génériques</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="blockly_task_creation.html">How to create a task on INGInious step by step</a></li>
+<li class="toctree-l1"><a class="reference internal" href="blockly_task_creation_fr.html">Comment créer une tâche sur INGInious étape par étape</a></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Block type task</span></p>
+<p class="caption"><span class="caption-text">Blocs</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="block_intro.html">Block tutorial - First steps</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="block_intro.html#getting-started-creating-your-course">Getting started - Creating your course</a></li>
-<li class="toctree-l2"><a class="reference internal" href="block_intro.html#student-interface-on-inginious">Student interface on INGInious</a></li>
-<li class="toctree-l2"><a class="reference internal" href="block_intro.html#submitting-and-grading">Submitting and grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="block_intro_fr.html">Tutoriel sur les blocs - Premiers pas</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="block_intro_fr.html#demarrage-creation-de-votre-cours">Démarrage - Création de votre cours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="block_intro_fr.html#interface-etudiant-sur-inginious">Interface étudiant sur INGInious</a></li>
+<li class="toctree-l2"><a class="reference internal" href="block_intro_fr.html#soumission-et-evaluation">Soumission et évaluation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="block_modify_block.html">Block tutorial - How to modify the blocks with the toolbox &amp; workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="block_modify_block_fr.html">Tutoriel sur les blocs - Comment modifier les blocs avec la boîte à outils et l’espace de travail</a></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Advanced block type</span></p>
+<p class="caption"><span class="caption-text">Blocs avancé</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="block_advanced.html">Advanced - Block</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="block_advanced.html#creation-of-a-basic-blockly-task">Creation of a <em>basic</em> Blockly task</a></li>
-<li class="toctree-l2"><a class="reference internal" href="block_advanced.html#customise-your-task-how-to-create-the-sum-function-using-the-graphical-interface">Customise your task : how to create the sum function (using the graphical interface)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="block_advanced.html#customise-your-task-create-the-sum-function-by-hand-using-xml">Customise your task :  create the sum function by hand (using xml)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="block_advanced.html#customise-your-task-an-only-workspace-task">Customise your task : an “only workspace” task</a></li>
-<li class="toctree-l2"><a class="reference internal" href="block_advanced.html#customise-your-task-how-to-create-a-custom-block-if-else">Customise your task : how to create a custom block (if/else)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="block_advanced_fr.html">Tutoriel Avancé - Bloc</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="block_advanced_fr.html#creation-d-une-tache-blockly-basique">Création d’une tâche Blockly <em>basique</em>.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="block_advanced_fr.html#personnalisez-votre-tache-comment-creer-la-fonction-somme-en-utilisant-l-interface-graphique">Personnalisez votre tâche : comment créer la fonction somme (en utilisant l’interface graphique)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="block_advanced_fr.html#personnalisez-votre-tache-creez-la-fonction-somme-a-la-main-en-utilisant-xml">Personnalisez votre tâche : créez la fonction somme à la main (en utilisant xml)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="block_advanced_fr.html#personnalisez-votre-tache-une-tache-uniquement-espace-de-travail">Personnalisez votre tâche : une tâche uniquement “espace de travail”.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="block_advanced_fr.html#personnalisez-votre-tache-comment-creer-un-bloc-personnalise-if-else">Personnalisez votre tâche : comment créer un bloc personnalisé (if/else)</a></li>
 </ul>
 </li>
 </ul>
@@ -160,7 +181,7 @@ For the french version please click here : TODO add link</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="maze_intro.html" class="btn btn-neutral float-right" title="Maze tutorial - First steps" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="maze_intro_fr.html" class="btn btn-neutral float-right" title="Tutoriel exercices labyrinthe - Premiers pas" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

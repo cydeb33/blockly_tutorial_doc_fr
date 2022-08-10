@@ -3,51 +3,69 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to the tutorial for Blockly on INGInious !
-==================================================
+Bienvenue dans ce tutoriel pour Blockly sur INGInious !
+=======================================================
       
-This tutorial will walk you through the steps necessary to setup your own blockly course. It is split in two parts : 
+Ce tutoriel vous guidera à travers les étapes nécessaires à la mise en place de votre propre cours Blockly. Il est divisé en deux parties : 
 
-* Maze type tasks. (TODO add hyperlinks) TODO add image of example
-* Blocks type tasks. 
+* **Les tâches de type labyrinthe (maze) :**
 
-We recommend that you start with the Maze type task, as it is easier to modify to your needs. 
+|
 
-In this tutorial you'll learn about :
+.. container:: text-center
 
-* The INGInious interface - What you and your students will need to know to navigate INGInious. 
-* How to create and edit tasks.
-* How to customize your own course.
+    .. image:: ../images/maze_example.png
+    
+|
 
-This tutorial is available both in french and in english.
-For the french version please click here : TODO add link
+* **Tâches de type Blocs :**
+
+|
+
+.. container:: text-center
+
+    .. image:: ../images/block_example.png
+
+|
+|
+
+Nous vous recommandons de commencer par la tâche de type labyrinthe, car elle est plus facile à modifier selon vos besoins. 
+
+Dans ce tutoriel, vous apprendrez à connaître :
+
+* **L'interface d'INGInious - Ce que vous et vos élèves devrez savoir pour naviguer dans INGInious.** 
+* **Comment créer et modifier des tâches.**
+* **Comment personnaliser votre propre cours.**
+
+Ce tutoriel est disponible en français et en anglais.
+Pour la version anglaise, veuillez cliquer ici : TODO add link
 
 .. toctree::
    :maxdepth: 2
-   :caption: Maze type task
+   :caption: Labyrinthe
 
-   maze_intro
-   maze_map_settings
-   maze_modify_blocks
-
-.. toctree::
-   :maxdepth: 2
-   :caption: General informations
-
-   blockly_task_creation
+   maze_intro_fr
+   maze_map_settings_fr
+   maze_modify_blocks_fr
 
 .. toctree::
    :maxdepth: 2
-   :caption: Block type task
+   :caption:  Informations génériques
 
-   block_intro
-   block_modify_block
+   blockly_task_creation_fr
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Blocs
+
+   block_intro_fr
+   block_modify_block_fr
    
 .. toctree::
    :maxdepth: 2
-   :caption: Advanced block type
+   :caption: Blocs avancé
 
-   block_advanced
+   block_advanced_fr
    
 Indices and tables
 ==================

@@ -310,7 +310,7 @@ Customise your task : an "only workspace" task
 
 When creating a Blockly course, you might want your student to only re-order the blocks that are on the workspace rather than using a toolbox. This example will show you how to achieve that with the graphical interface. Here, we will take the very simple example of a function counting the number of occurence of a number n in a list and returns it.
 
-First, open the graphical editor, click on the workspace tab and create a function that takes two parameters *list* and *n*, and returns a value *return* (if you are not familiar with the graphical interface use, refer to `Example : create the sum function (using the graphical interface)`_)
+First, open the graphical editor, click on the workspace tab and create a function that takes two parameters *list* and *n*, and returns a value *return* (if you are not familiar with the graphical interface use, refer to `Customise your task : how to create the sum function (using the graphical interface)`_)
 
 .. image:: ../images/img_en/block/workFun.png
     :align: center

@@ -1,0 +1,95 @@
+Tutoriel exercices labyrinthe - Premiers pas
+============================================
+
+
+Démarrage - Création de votre cours
+--------------------------------------
+
+Bienvenue au tutoriel Blockly maze task.
+
+Ce tutoriel vous guidera à travers les informations nécessaires pour créer des tâches de labyrinthe Blockly.
+
+Afin de construire votre cours et toutes les tâches qu'il contient, vous devez d'abord créer votre propre cours. Pour ce faire, veuillez contacter : contact@inginious.org.
+
+Interface étudiant sur INGInious
+--------------------------------
+
+Commençons ce tutoriel en passant en revue ce que vos étudiants vont utiliser.
+
+Toutes les tâches blockly qui nécessitent une carte visuelle sont définies comme dans l'image ci-dessous, qui représente une tâche de base de labyrinthe.
+
+* En haut de l'image, vous pouvez voir le titre et le contexte de la tâche.
+* **MAP** : Les tâches visuelles blockly nécessitent une **map**, le but de l'élève est de faire aller le personnage d'un point A à un point B, en suivant un certain chemin tout en évitant les obstacles.
+* **BOÎTE À OUTILS** : Pour réaliser la tâche, l'élève dispose d'un ensemble de blocs, présents dans la **boîte à outils**, l'élève peut glisser et déposer des blocs de la **boîte à outils** vers l'**espace de travail**. Lorsque vous configurez la tâche en tant qu'enseignant, vous décidez quels blocs sont disponibles dans la **boîte à outils**.
+* **ESPACE DE TRAVAIL** : L'**espace de travail** est l'endroit où les blocs sont placés pour résoudre la tâche. Lors de la mise en place de la tâche en tant qu'enseignant, vous décidez quels blocs sont disponibles dans l'**espace de travail**.
+* Le bouton **Exécuter le code** permet à l'étudiant d'exécuter les blocs présents dans l'**espace de travail**. Le personnage se déplacera en fonction des blocs. Pour exécuter le code plusieurs fois, l'élève doit appuyer à nouveau sur le bouton lorsqu'il est indiqué **"Redémarrer "** et ensuite **"Exécuter le code "** à nouveau (comme dans l'image du bas).
+* 2. Les trois boutons **"Blocks / Split / Text "** permettent à l'étudiant d'afficher/masquer une interface, montrant le code Python équivalent des blocs actuellement présents dans l'espace de travail. Le bouton **"Split "** affiche l'interface sur la droite. Par défaut, il est réglé sur **"Blocs "**, ce qui ne montre que les blocs. L'interface montrant le code n'est pas modifiable. 3.
+* L'interface montrant l'équivalent du code Python des blocs dans l'espace de travail. 4.
+* Afin de tester sa solution, l'étudiant doit appuyer sur **Submit**. Le fait d'appuyer sur **Exécuter le code** ne fait que montrer sur la carte l'effet des blocs. Le bouton **Submit** déclenche les scripts de notation, montrant le feedback que vous avez décidé de définir en fonction de la réponse de l'étudiant (le système de notation est abordé plus en détail plus loin dans ce tutoriel).
+* 5. L'historique des soumissions en bas à gauche permet à l'étudiant de retrouver ses tentatives précédentes et de les ré-exécuter.
+* 6. Cette fenêtre affiche quelques informations sur la tâche et la progression de l'étudiant.
+
+.. container:: text-center
+
+    .. image:: ../images/img_fr/maze/interface_explained.JPG
+ 
+|
+|
+     
+Le bouton **"Redémarrer "** :
+
+|
+
+
+.. container:: text-center
+
+    .. image:: ../images/img_fr/maze/restart.JPG  
+   
+   
+|
+|
+  
+Soumettre et correction
+-----------------------
+
+Comme expliqué précédemment, le fait d'appuyer sur **"Exécuter le code "** ne fait qu'exécuter le code afin que l'étudiant puisse voir ce que le personnage fait en conséquence.
+
+Pour évaluer le code écrit par l'étudiant, ce dernier doit appuyer sur **"Soumettre"**. Son code est ensuite envoyé à un script testant le code, ici un fichier Python appelé **"student.py "** qui envoie un message à un fichier **"run "**, puis le fichier **"run "** enverra un message à l'étudiant. Ces fichiers devraient déjà être entièrement fonctionnels dans les tâches de base que vous avez téléchargées et vous ne devriez pas avoir à les modifier.
+
+Lorsqu'un étudiant soumet son code, la correction testera si le code de l'étudiant correspond à la solution. Si les tests sont tous corrects l'étudiant a réussi et il recevra un feedback positif. Dans notre exemple, cela ressemblera à ceci :
+
+|
+ 
+.. container:: text-center
+
+    .. image:: ../images/img_fr/maze/success.JPG
+
+|
+|
+  
+Si un ou plusieurs test ont échoués, un feedback négatif est donné et un message d'erreur est affiché :
+
+|
+ 
+.. container:: text-center
+
+    .. image:: ../images/img_fr/maze/failed.JPG
+ 
+|
+|
+     
+Dans l'image ci-dessous il y a deux éléments supplémentaires :
+
+* Le "slider" de vitesse
+* Le bloc de départ
+
+Il est possible d'incorporer un bloc de départ, inerte, pour aider les élèves à structurer leur code.
+Il est aussi possible d'incorporer un slider de vitesse, qui augmente ou diminue la vitesse de lecture des blocs.
+
+|
+ 
+.. container:: text-center
+
+    .. image:: ../images/slider_start.png 
+    
+

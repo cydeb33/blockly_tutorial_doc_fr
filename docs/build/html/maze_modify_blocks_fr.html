@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutoriel exercices labyrinthe - Comment modifier les blocs avec la boîte à outils et l’espace de travail &mdash; blockly_tutorial  documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How to create a task on INGInious step by step" href="blockly_task_creation_fr.html" />
+    <link rel="prev" title="Tutoriel sur les labyrinthes - Paramètres de la carte" href="maze_map_settings_fr.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> blockly_tutorial
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Maze type task</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="maze_intro_fr.html">Tutoriel exercices labyrinthe - Premiers pas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maze_map_settings_fr.html">Tutoriel sur les labyrinthes - Paramètres de la carte</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutoriel exercices labyrinthe - Comment modifier les blocs avec la boîte à outils et l’espace de travail</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#interface-xml">Interface XML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interface-graphique">Interface graphique</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">General informations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="blockly_task_creation_fr.html">How to create a task on INGInious step by step</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Block type task</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="block_intro_fr.html">Block tutorial - First steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="block_modify_block_fr.html">Block tutorial - How to modify the blocks with the toolbox &amp; workspace</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced block type</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="block_advanced_fr.html">Advanced - Block</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">blockly_tutorial</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Tutoriel exercices labyrinthe - Comment modifier les blocs avec la boîte à outils et l’espace de travail</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/maze_modify_blocks_fr.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="tutoriel-exercices-labyrinthe-comment-modifier-les-blocs-avec-la-boite-a-outils-et-l-espace-de-travail">
+<h1>Tutoriel exercices labyrinthe - Comment modifier les blocs avec la boîte à outils et l’espace de travail<a class="headerlink" href="#tutoriel-exercices-labyrinthe-comment-modifier-les-blocs-avec-la-boite-a-outils-et-l-espace-de-travail" title="Permalink to this headline">¶</a></h1>
+<p>Si vous souhaitez ajouter ou supprimer des blocs de votre tâche, vous pouvez le faire en utilisant soit l’<strong>interface utilisateur graphique</strong>, soit les <strong>fichiers XML</strong>. Les blocs spécifiques à un labyrinthe se trouvent dans la catégorie Bibliothèque de blocs, et sont définis dans le fichier <strong>“blocks.js “</strong> (sous YourTask/public/), qui ne doit pas être modifié, sauf si vous souhaitez y ajouter de nouveaux blocs personnalisés.</p>
+<p>Pour créer un nouveau bloc personnalisé, veuillez consulter ce tutoriel : <a class="reference external" href="https://jobblockly.readthedocs.io/en/latest/BaseBlockly.html#example-create-a-custom-block-if-else">https://jobblockly.readthedocs.io/en/latest/BaseBlockly.html#example-create-a-custom-block-if-else</a></p>
+<div class="section" id="interface-xml">
+<h2>Interface XML<a class="headerlink" href="#interface-xml" title="Permalink to this headline">¶</a></h2>
+<p><strong>Voici l’interface XML où vous pouvez modifier les blocs présents dans votre tâche (remarquez qu’il y a deux fichiers séparés. Un pour la boîte à outils et un pour l’espace de travail):</strong></p>
+<div class="text-center docutils container">
+<img alt="_images/xml.JPG" src="_images/xml.JPG" />
+</div>
+</div>
+<div class="section" id="interface-graphique">
+<h2>Interface graphique<a class="headerlink" href="#interface-graphique" title="Permalink to this headline">¶</a></h2>
+<p><strong>C’est l’interface graphique où vous pouvez modifier les blocs présents dans votre tâche (Les fichiers XML correspondants sont automatiquement mis à jour lorsque vous modifiez l’interface graphique) :</strong></p>
+<div class="text-center docutils container">
+<img alt="_images/graphically.JPG" src="_images/graphically.JPG" />
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="maze_map_settings_fr.html" class="btn btn-neutral float-left" title="Tutoriel sur les labyrinthes - Paramètres de la carte" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="blockly_task_creation_fr.html" class="btn btn-neutral float-right" title="How to create a task on INGInious step by step" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, celine deknop - cyrille debongnie.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

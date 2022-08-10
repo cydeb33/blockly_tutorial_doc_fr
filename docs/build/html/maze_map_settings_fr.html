@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutoriel exercices labyrinthes - Paramètres de la carte &mdash; blockly_tutorial  documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tutoriel exercices labyrinthe - Comment modifier les blocs avec la boîte à outils et l’espace de travail" href="maze_modify_blocks_fr.html" />
+    <link rel="prev" title="Tutoriel exercices labyrinthe - Premiers pas" href="maze_intro_fr.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> blockly_tutorial
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Labyrinthe</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="maze_intro_fr.html">Tutoriel exercices labyrinthe - Premiers pas</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutoriel exercices labyrinthes - Paramètres de la carte</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#modifier-la-carte">Modifier la carte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cartes-multiples">Cartes multiples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="maze_modify_blocks_fr.html">Tutoriel exercices labyrinthe - Comment modifier les blocs avec la boîte à outils et l’espace de travail</a></li>
+</ul>
+<p class="caption"><span class="caption-text">General informations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="blockly_task_creation_fr.html">Comment créer une tâche sur INGInious étape par étape</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Blocs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="block_intro_fr.html">Block tutorial - First steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="block_modify_block_fr.html">Block tutorial - How to modify the blocks with the toolbox &amp; workspace</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Blocs avancé</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="block_advanced_fr.html">Advanced - Block</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">blockly_tutorial</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Tutoriel exercices labyrinthes - Paramètres de la carte</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/maze_map_settings_fr.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="tutoriel-exercices-labyrinthes-parametres-de-la-carte">
+<h1>Tutoriel exercices labyrinthes - Paramètres de la carte<a class="headerlink" href="#tutoriel-exercices-labyrinthes-parametres-de-la-carte" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="modifier-la-carte">
+<h2>Modifier la carte<a class="headerlink" href="#modifier-la-carte" title="Permalink to this headline">¶</a></h2>
+<p>Vous pouvez définir votre propre carte pour chaque exercice. Pour ce faire, il vous suffit de modifier le contenu du fichier maze.config.json qui se trouve dans “YourTask/public/maze.config.json”.</p>
+<p>L’image ci-dessous montre le contenu du maze.config.json.</p>
+<div class="text-center docutils container">
+<img alt="_images/maze_config.JPG" src="_images/maze_config.JPG" />
+</div>
+<p>Ce maze.config.json donne la carte montrée ci-dessous :</p>
+<div class="text-center docutils container">
+<img alt="_images/maze_config_example.JPG" src="_images/maze_config_example.JPG" />
+</div>
+<p>Si vous souhaitez modifier la disposition de la carte, comme créer de nouveaux chemins, ajouter des obstacles, etc., vous devez modifier l’élément <strong>“layout “</strong>. <strong>“layout “</strong> est un tableau de tableaux. Chaque tableau représente une carte que l’élève doit résoudre dans cet exercice. La signification des nombres trouvés dans le tableau se trouve dans l’élément <strong>“squareType “</strong> (que vous ne devriez pas avoir à modifier, sauf si vous ajoutez de nouveaux types d’éléments au labyrinthe. Nous allons les passer en revue plus en détail ici :</p>
+<ul class="simple">
+<li><strong>0</strong> est une tuile vide (qui peut être peuplée aléatoirement avec un décor non interactif) où le personnage ne peut pas aller.</li>
+<li><strong>1</strong> est une tuile ouverte où le personnage peut marcher.</li>
+<li><strong>2</strong> est la tuile où le personnage commence le jeu.</li>
+<li><strong>3</strong> est l’objectif à atteindre pour gagner la partie.</li>
+<li><strong>4</strong> est une tuile avec un obstacle qui tuera le personnage s’il marche dessus.</li>
+<li><strong>5</strong> est une valeur spéciale utilisée si vous voulez que les tuiles de départ et d’arrivée soient les mêmes.</li>
+</ul>
+<p>Si vous souhaitez augmenter ou diminuer la vitesse d’animation du personnage, mettez à jour l’élément <strong>“animationSpeed “</strong>.</p>
+<p>Si vous souhaitez modifier l’orientation du personnage au début de la tâche, mettez à jour l’élément <strong>“startDirection “</strong>. Le personnage est actuellement orienté vers le SOUTH, vous pouvez mettre WEST, NORTH ou EAST.</p>
+</div>
+<div class="section" id="cartes-multiples">
+<h2>Cartes multiples<a class="headerlink" href="#cartes-multiples" title="Permalink to this headline">¶</a></h2>
+<p>Vous pouvez ajouter autant de cartes que vous le souhaitez dans l’élément <strong>“layout “</strong>, comme le montre l’image ci-dessous.</p>
+<p>Nos deux cartes ne seront, bien entendu, pas affichées en même temps. Elles sont là pour s’assurer que l’étudiant ne code pas en dur la solution à la carte qu’il voit. Vous pouvez ajouter autant de cartes que vous le souhaitez, avec un minimum d’une.</p>
+<p>Lorsqu’un étudiant soumet son code, la correction testera chaque carte individuellement (dans l’ordre). Si elles passent toutes, l’étudiant a réussi.</p>
+<div class="text-center docutils container">
+<img alt="_images/double_layout.JPG" src="_images/double_layout.JPG" />
+</div>
+<p>Dans notre exemple, cela ressemblera à ceci (avec seulement la carte de gauche affichée) :</p>
+<div class="text-center docutils container">
+<img alt="_images/multiple_maze.JPG" src="_images/multiple_maze.JPG" />
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="maze_intro_fr.html" class="btn btn-neutral float-left" title="Tutoriel exercices labyrinthe - Premiers pas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="maze_modify_blocks_fr.html" class="btn btn-neutral float-right" title="Tutoriel exercices labyrinthe - Comment modifier les blocs avec la boîte à outils et l’espace de travail" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, celine deknop - cyrille debongnie.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
