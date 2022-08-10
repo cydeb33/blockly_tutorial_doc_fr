@@ -45,18 +45,18 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="maze_modify_blocks_fr.html">Tutoriel exercices labyrinthe - Comment modifier les blocs avec la boîte à outils et l’espace de travail</a></li>
 </ul>
-<p class="caption"><span class="caption-text">General informations</span></p>
+<p class="caption"><span class="caption-text">Informations génériques</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="blockly_task_creation_fr.html">Comment créer une tâche sur INGInious étape par étape</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Blocs</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="block_intro_fr.html">Block tutorial - First steps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="block_modify_block_fr.html">Block tutorial - How to modify the blocks with the toolbox &amp; workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="block_intro_fr.html">Tutoriel sur les blocs - Premiers pas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="block_modify_block_fr.html">Tutoriel sur les blocs - Comment modifier les blocs avec la boîte à outils et l’espace de travail</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Blocs avancé</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="block_advanced_fr.html">Advanced - Block</a></li>
+<li class="toctree-l1"><a class="reference internal" href="block_advanced_fr.html">Tutoriel Avancé - Bloc</a></li>
 </ul>
 
         </div>
@@ -92,13 +92,19 @@
 <div class="text-center docutils container">
 <img alt="_images/maze_config.JPG" src="_images/maze_config.JPG" />
 </div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <p>Ce maze.config.json donne la carte montrée ci-dessous :</p>
 <div class="text-center docutils container">
 <img alt="_images/maze_config_example.JPG" src="_images/maze_config_example.JPG" />
 </div>
-<p>Si vous souhaitez modifier la disposition de la carte, comme créer de nouveaux chemins, ajouter des obstacles, etc., vous devez modifier l’élément <strong>“layout “</strong>. <strong>“layout “</strong> est un tableau de tableaux. Chaque tableau représente une carte que l’élève doit résoudre dans cet exercice. La signification des nombres trouvés dans le tableau se trouve dans l’élément <strong>“squareType “</strong> (que vous ne devriez pas avoir à modifier, sauf si vous ajoutez de nouveaux types d’éléments au labyrinthe. Nous allons les passer en revue plus en détail ici :</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Si vous souhaitez modifier la disposition de la carte, comme créer de nouveaux chemins, ajouter des obstacles, etc. Vous devez modifier l’élément <strong>“layout “</strong>. <strong>“layout “</strong> est un tableau de tableaux. Chaque tableau représente une carte que l’élève doit résoudre dans cet exercice. La signification des nombres trouvés dans le tableau se trouve dans l’élément <strong>“squareType “</strong> (que vous ne devriez pas avoir à modifier, sauf si vous ajoutez de nouveaux types d’éléments au labyrinthe). Nous allons les passer en revue plus en détail ici :</p>
 <ul class="simple">
-<li><strong>0</strong> est une tuile vide (qui peut être peuplée aléatoirement avec un décor non interactif) où le personnage ne peut pas aller.</li>
+<li><strong>0</strong> est une tuile vide (qui peut être peuplée aléatoirement avec un décor non intéractif) où le personnage ne peut pas aller.</li>
 <li><strong>1</strong> est une tuile ouverte où le personnage peut marcher.</li>
 <li><strong>2</strong> est la tuile où le personnage commence le jeu.</li>
 <li><strong>3</strong> est l’objectif à atteindre pour gagner la partie.</li>
@@ -111,10 +117,13 @@
 <div class="section" id="cartes-multiples">
 <h2>Cartes multiples<a class="headerlink" href="#cartes-multiples" title="Permalink to this headline">¶</a></h2>
 <p>Vous pouvez ajouter autant de cartes que vous le souhaitez dans l’élément <strong>“layout “</strong>, comme le montre l’image ci-dessous.</p>
-<p>Nos deux cartes ne seront, bien entendu, pas affichées en même temps. Elles sont là pour s’assurer que l’étudiant ne code pas en dur la solution à la carte qu’il voit. Vous pouvez ajouter autant de cartes que vous le souhaitez, avec un minimum d’une.</p>
+<p>Nos deux cartes ne seront, bien entendu, pas affichées en même temps. Elles sont là pour s’assurer que l’étudiant ne code pas en dur la solution à la carte qu’il voit. Vous pouvez ajouter autant de cartes que vous le souhaitez, avec une carte au minimum.</p>
 <p>Lorsqu’un étudiant soumet son code, la correction testera chaque carte individuellement (dans l’ordre). Si elles passent toutes, l’étudiant a réussi.</p>
 <div class="text-center docutils container">
 <img alt="_images/double_layout.JPG" src="_images/double_layout.JPG" />
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
 <p>Dans notre exemple, cela ressemblera à ceci (avec seulement la carte de gauche affichée) :</p>
 <div class="text-center docutils container">

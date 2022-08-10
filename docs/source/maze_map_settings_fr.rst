@@ -12,17 +12,21 @@ L'image ci-dessous montre le contenu du maze.config.json.
 
     .. image:: ../images/img_fr/maze/maze_config.JPG
 
+|
+
 Ce maze.config.json donne la carte montrée ci-dessous :
 
 .. container:: text-center
 
     .. image:: ../images/img_fr/maze/maze_config_example.JPG
 
-Si vous souhaitez modifier la disposition de la carte, comme créer de nouveaux chemins, ajouter des obstacles, etc., vous devez modifier l'élément **"layout "**. **"layout "** est un tableau de tableaux. Chaque tableau représente une carte que l'élève doit résoudre dans cet exercice. La signification des nombres trouvés dans le tableau se trouve dans l'élément **"squareType "** (que vous ne devriez pas avoir à modifier, sauf si vous ajoutez de nouveaux types d'éléments au labyrinthe. Nous allons les passer en revue plus en détail ici :
+|
+
+Si vous souhaitez modifier la disposition de la carte, comme créer de nouveaux chemins, ajouter des obstacles, etc. Vous devez modifier l'élément **"layout "**. **"layout "** est un tableau de tableaux. Chaque tableau représente une carte que l'élève doit résoudre dans cet exercice. La signification des nombres trouvés dans le tableau se trouve dans l'élément **"squareType "** (que vous ne devriez pas avoir à modifier, sauf si vous ajoutez de nouveaux types d'éléments au labyrinthe). Nous allons les passer en revue plus en détail ici :
 
 
 
-* **0** est une tuile vide (qui peut être peuplée aléatoirement avec un décor non interactif) où le personnage ne peut pas aller.
+* **0** est une tuile vide (qui peut être peuplée aléatoirement avec un décor non intéractif) où le personnage ne peut pas aller.
 
 * **1** est une tuile ouverte où le personnage peut marcher.
 
@@ -43,7 +47,7 @@ Cartes multiples
 
 Vous pouvez ajouter autant de cartes que vous le souhaitez dans l'élément **"layout "**, comme le montre l'image ci-dessous.
 
-Nos deux cartes ne seront, bien entendu, pas affichées en même temps. Elles sont là pour s'assurer que l'étudiant ne code pas en dur la solution à la carte qu'il voit. Vous pouvez ajouter autant de cartes que vous le souhaitez, avec un minimum d'une.
+Nos deux cartes ne seront, bien entendu, pas affichées en même temps. Elles sont là pour s'assurer que l'étudiant ne code pas en dur la solution à la carte qu'il voit. Vous pouvez ajouter autant de cartes que vous le souhaitez, avec une carte au minimum.
 
 Lorsqu'un étudiant soumet son code, la correction testera chaque carte individuellement (dans l'ordre). Si elles passent toutes, l'étudiant a réussi.
 
@@ -51,6 +55,7 @@ Lorsqu'un étudiant soumet son code, la correction testera chaque carte individu
 
     .. image:: ../images/img_fr/maze/double_layout.JPG
 
+|
 
 Dans notre exemple, cela ressemblera à ceci (avec seulement la carte de gauche affichée) :
 

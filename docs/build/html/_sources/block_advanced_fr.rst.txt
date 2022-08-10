@@ -9,9 +9,9 @@ Si vous souhaitez configurer la tâche vous-même ou vous plonger plus profondé
 
 Il y a, tout d'abord, quelques étapes pour configurer une tâche. Ce sont :
 
-TODO modify hyperlink here
+TODO mettre le lien vers "comment créer une tâche sur inginious ..."
 
-1. Créer la tâche. (Le tutoriel pour cela peut être trouvé ici https://docs.inginious.org/en/latest/teacher_doc/task_tuto.html ) Définissez un titre, un contexte, votre nom, les options que vous voulez,... Lorsque vous créez un sous-problème, sélectionnez "blockly" comme "type de tâche", donnez-lui un ID et n'oubliez pas de sauvegarder en cliquant sur "Enregistrer les modifications".
+1. Créer la tâche. Définissez un titre, un contexte, votre nom, les options que vous voulez,... Lorsque vous créez un sous-problème, sélectionnez "blockly" comme "type de tâche", donnez-lui un ID et n'oubliez pas de sauvegarder en cliquant sur "Enregistrer les modifications".
 2. Si vous le souhaitez, dans le bouton "Option de l'espace de travail", définissez le nombre maximum de blocs que l'étudiant peut utiliser pour réaliser la tâche en l'entrant dans le champ "Nombre maximum de blocs" ("Infini" par défaut)
 
 
@@ -20,7 +20,7 @@ TODO modify hyperlink here
    :width: 75 %
 
 
-3. N'oubliez pas de modifier l'"environnement" en conséquence. Par exemple, dans une tâche blockchain, vous choisirez "Conteneur standard (Docker)" pour le "Type d'environnement d'évaluation". Vous devez également modifier l'"Environnement d'évaluation" en fonction de la langue que vous utiliserez. Mettez "Default" si vous n'êtes pas sûr. 
+3. N'oubliez pas de modifier l'"environnement" en conséquence. Par exemple, dans une tâche blocs, vous choisirez "Conteneur standard (Docker)" pour le "Type d'environnement d'évaluation". Vous devez également modifier l'"Environnement d'évaluation" en fonction du langage de programmation que vous utiliserez. Mettez "Default" si vous n'êtes pas sûr. 
 
 Il y a deux façons de configurer Blockly : soit en utilisant l'interface graphique intégrée, soit en entrant les blocs à la main. Comme la première solution est plus facile à utiliser pour les débutants, nous allons l'explorer en premier. Dans l'onglet "Sous-problèmes", ouvrez votre tâche et faites défiler vers le bas, cliquez sur "éditer la boîte à outils/espace de travail graphiquement". 
 
@@ -38,7 +38,7 @@ La partie gauche est l'endroit où vous pouvez configurer l'outil, et la partie 
 .. image:: ../images/img_en/block/toolbox.png
    :align: center
 
-Si vous voulez supprimer un bloc, il suffit de le faire glisser vers la corbeille en bas à droite. Maintenant, vous pouvez également ajouter des blocs à l'espace de travail de l'élève, qui serviront de base à l'exercice. Il suffit de cliquer sur l'onglet "espace de travail" et de glisser/déposer de la même manière que vous l'avez fait avec la boîte à outils.
+Si vous voulez supprimer un bloc, il suffit de le faire glisser vers la corbeille en bas à droite. Maintenant, vous pouvez également ajouter des blocs à l'espace de travail de l'élève, qui serviront de base à l'exercice. Il suffit de cliquer sur l'onglet "espace de travail (workspace)" et de glisser/déposer de la même manière que vous l'avez fait avec la boîte à outils (toolbox).
 
 .. image:: ../images/img_en/block/workspace.png
    :align: center
@@ -64,18 +64,18 @@ Maintenant, configurez la fonction. Les icônes de la roue nous permettent d'ajo
 .. image:: ../images/img_en/block/param2.png
     :width: 49 %
 
-L'icône *?* nous permet de définir une info-bulle (texte qui s'affiche au passage de la souris) en tapant simplement dans le champ :
+L'icône "*?*" nous permet de définir une info-bulle (texte qui s'affiche au passage de la souris) en tapant simplement dans le champ :
 
 .. image:: ../images/img_en/block/tooltip.png
    :align: center
 
-Enfin, nous devons nommer notre fonction, en changeant le *faire quelque chose* en ce que nous voulons, ici, *Sum* :
+Enfin, nous devons nommer notre fonction, en changeant le *to ... with* en ce que nous voulons, ici, *Sum* :
 
 
 .. image:: ../images/img_en/block/name.png
    :align: center
 
-Maintenant, créons une variable pour contenir le résultat. Cliquez sur la catégorie "Variables" et sélectionnez "créer une variable". Saisissez le nom de votre variable, "résultat" par exemple, et elle sera disponible dans la catégorie :
+Maintenant, créons une variable pour contenir le résultat. Cliquez sur la catégorie "Variables" et sélectionnez "créer une variable" (create variable). Saisissez le nom de votre variable, "résultat" par exemple, et elle sera disponible dans la catégorie :
 
 .. image:: ../images/img_en/block/var1.png
     :width: 39 %
@@ -84,17 +84,17 @@ Maintenant, créons une variable pour contenir le résultat. Cliquez sur la cat�
 .. image:: ../images/img_en/block/var3.png
     :width: 39 %
 
-Enfin, sélectionnez le bloc correspondant et branchez-le à l'endroit "retour". Voici notre espace de travail de base terminé, avec l'aperçu :
+Enfin, sélectionnez le bloc correspondant et branchez-le à l'endroit "retour" (return). Voici notre espace de travail de base terminé, avec l'aperçu :
 
 .. image:: ../images/img_en/block/result1.png
    :align: center
 
-Il est maintenant temps de remplir la boîte à outils avec les blocs nécessaires. Cliquez sur l'onglet correspondant, et sélectionnez les blocs que vous voulez pour la tâche. Dans notre cas, nous devons d'abord recréer toutes les variables précédentes, de la même manière que nous l'avons fait pour la variable *résultat* (en cliquant sur créer une variable). Voici ce que nous obtenons :
+Il est maintenant temps de remplir la boîte à outils avec les blocs nécessaires. Cliquez sur l'onglet correspondant, et sélectionnez les blocs que vous voulez pour la tâche. Dans notre cas, nous devons d'abord recréer toutes les variables précédentes, de la même manière que nous l'avons fait pour la variable *result* (en cliquant sur créer une variable). Voici ce que nous obtenons :
 
 .. image:: ../images/img_en/block/toolVar.png
    :align: center
 
-Ensuite, nous voulons le bloc *set*, donc nous le faisons glisser dans la boîte à outils. En utilisant la flèche à côté du nom de la variable, nous pouvons sélectionner la variable que nous voulons par défaut (*résultat* dans notre cas) :
+Ensuite, nous voulons le bloc *set*, donc nous le faisons glisser dans la boîte à outils. En utilisant la flèche à côté du nom de la variable, nous pouvons sélectionner la variable que nous voulons par défaut (*result* dans notre cas) :
 
 .. image:: ../images/img_en/block/pick.png
     :width: 49 %
@@ -111,12 +111,12 @@ Et voici le produit final avec l'aperçu :
 .. image:: ../images/img_en/block/finished.png
    :align: center
 
-Cliquez sur fermer, puis enregistrer, et vous avez terminé avec la partie interface graphique de la création de la tâche. Vous pouvez maintenant visualiser votre tâche sur INGInious et connecter les blocs, mais il n'y a pas encore de correction ou de feedback. Voici à quoi cela ressemblera pour l'étudiant :
+Cliquez sur fermer, puis "appliquer les changements", et vous avez terminé avec la partie interface graphique de la création de la tâche. Vous pouvez maintenant visualiser votre tâche sur INGInious et connecter les blocs, mais il n'y a pas encore de correction ou de feedback. Voici à quoi cela ressemblera pour l'étudiant :
 
 .. image:: ../images/img_en/block/studentResult.png
    :align: center
 
-Pour le retour, vous devrez créer un ``run`` et un fichier qui contient la correction de la tâche. Commençons par celui-là, que nous appellerons ``sum.py``. Il doit d'abord récupérer le code de l'étudiant avec une instruction comme celle-ci : ``@@subProblemID@@``. Ensuite, vous pourrez appeler la fonction créée avec son nom (ici "Sum"), et ensuite exécuter les tests que vous voulez. Pour se conformer au fichier d'exécution habituel d'INGInious, vous devez sortir "True" si les tests réussissent, et un retour suivi de "exit()`` en cas d'échec. Le code suivant est un exemple pour notre fonction somme :
+Pour le retour, vous devrez créer un ``run`` et un fichier qui contient la correction de la tâche. Commençons par celui-là, que nous appellerons ``sum.py``. Il doit d'abord récupérer le code de l'étudiant avec une instruction comme celle-ci : ``@@subProblemID@@``. Ensuite, vous pourrez appeler la fonction créée avec son nom (ici "Sum"), et ensuite exécuter les tests que vous voulez. Pour se conformer au fichier d'exécution habituel d'INGInious, vous devez sortir "True" si les tests réussissent, et un retour suivi de ``exit()`` en cas d'échec. Le code suivant est un exemple pour notre fonction somme :
 
 .. code-block:: python
     
@@ -187,7 +187,7 @@ Tout d'abord, des balises xml doivent entourer une ligne sur deux dans la boîte
     <xml xmlns="http://www.w3.org/1999/xhtml">
     </xml>
 
-Ensuite, pour la boîte à outils, nous avons besoin des variables *a*, *b* et *resultat*. Le code pour une variable est le suivant, seul le contenu de la balise ``field`'' change pour indiquer le nom de la variable. Voici le code pour la variable *a* :
+Ensuite, pour la boîte à outils, nous avons besoin des variables *a*, *b* et *resultat*. Le code pour une variable est le suivant, seul le contenu de la balise ``field`` change pour indiquer le nom de la variable. Voici le code pour la variable *a* :
 
 .. code-block:: xml
 
@@ -317,7 +317,7 @@ Personnalisez votre tâche : une tâche uniquement "espace de travail".
 
 Lors de la création d'un cours Blockly, vous pouvez souhaiter que vos étudiants ne réorganisent que les blocs qui se trouvent sur l'espace de travail plutôt que d'utiliser une boîte à outils. Cet exemple vous montrera comment réaliser cela avec l'interface graphique. Nous allons prendre l'exemple très simple d'une fonction qui compte le nombre d'occurrences d'un nombre n dans une liste et le renvoie.
 
-Tout d'abord, ouvrez l'éditeur graphique, cliquez sur l'onglet espace de travail et créez une fonction qui prend deux paramètres *liste* et *n*, et renvoie une valeur *rendement* (si vous n'êtes pas familier avec l'utilisation de l'interface graphique, reportez-vous à `Personnaliser votre tâche : comment créer la fonction somme (en utilisant l'interface graphique)`_)
+Tout d'abord, ouvrez l'éditeur graphique, cliquez sur l'onglet espace de travail et créez une fonction qui prend deux paramètres *liste* et *n*, et renvoie une valeur *rendement* (si vous n'êtes pas familier avec l'utilisation de l'interface graphique, reportez-vous à `Personnalisez votre tâche : comment créer la fonction somme (en utilisant l'interface graphique)`_)
 
 .. image:: ../images/img_en/block/workFun.png
     :align: center
@@ -332,7 +332,7 @@ Ensuite, dans la catégorie *Loops*, récupérez le bloc "for each item in list"
 .. image:: ../images/img_en/block/workLoop.png
     :align: center
 
-Ajoutez la condition "si" de la catégorie *Logique*, et créez notre booléen `i == n` avec des blocs de *Logique* et *Variables*.
+Ajoutez la condition "if" de la catégorie *Logic*, et créez notre booléen `i == n` avec des blocs de *Logique* et *Variables*.
 
 .. image:: ../images/img_en/block/workBool.png
     :align: center
@@ -397,7 +397,7 @@ Si vous pensez que les blocs existants ne fournissent pas assez de fonctionnalit
 .. image:: ../images/img_en/block/baseScreen.png
     :align: center
 
-Vous construirez votre bloc en utilisant le côté gauche, tandis que le côté droit est un aperçu en direct du visuel et du code qui seront générés. Construisons un bloc "if else". Tout d'abord, saisissez un nom dans le champ supérieur. Il doit être unique pour tous les blocs Blockly, nous l'appellerons donc "custom_if_else". Ensuite, nous pouvons définir une info-bulle dans le champ correspondant, et choisir une couleur pour le bloc en utilisant le bloc "hue" (la couleur ne changera pas le comportement).
+Vous construirez votre bloc en utilisant le côté gauche, tandis que le côté droit est un aperçu en direct du visuel et du code qui seront générés. Construisons un bloc ``if else``. Tout d'abord, saisissez un nom dans le champ supérieur. Il doit être unique pour tous les blocs Blockly, nous l'appellerons donc ``custom_if_else``. Ensuite, nous pouvons définir une info-bulle dans le champ correspondant, et choisir une couleur pour le bloc en utilisant le bloc ``hue`` (la couleur ne changera pas le comportement).
 
 .. image:: ../images/img_en/block/blockCustom1.png
     :align: center
@@ -417,7 +417,7 @@ Maintenant, nous avons besoin des emplacements pour mettre les déclarations. En
 
 Maintenant, notre bloc a la structure correcte, mais l'ajout de texte le rendrait plus clair. Cela peut être fait en utilisant la catégorie *Field*. Il y a beaucoup d'éléments de champs différents (entrée utilisateur, drop down, sélecteurs de couleurs,...), pour lesquels vous pouvez trouver de la documentation `ici <https://developers.google.com/blockly/guides/create-custom-blocks/blockly-developer-tools>`_.
 
-Dans notre cas, nous avons besoin de deux champs *text*, un dans la saisie de la valeur, et un dans la saisie de la deuxième déclaration. Dans le premier champ, nous écrivons "si", et dans le second "sinon" (ici, il n'y a pas besoin que les valeurs soient uniques).
+Dans notre cas, nous avons besoin de deux champs *text*, un dans la saisie de la valeur, et un dans la saisie de la deuxième déclaration. Dans le premier champ, nous écrivons ``if``, et dans le second ``else`` (ici, il n'y a pas besoin que les valeurs soient uniques).
 
 .. image:: ../images/img_en/block/blockCustom4.png
     :align: center
